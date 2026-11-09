@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 
 # 1. Koneksi ke MongoDB
 client = MongoClient(
-    st.secrets["MONGO_URI"],
+    st.secrets["mongo"]["uri"],
     serverSelectionTimeoutMS=10000
 )
 
